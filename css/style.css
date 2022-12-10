@@ -1,0 +1,386 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: #151719;
+    color: #ffffff;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* ---HEADER------------------------------- */
+
+.header__container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #5D5DFF;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.nav__link {
+    font-size: 16px;
+    color: #9BA9B4;
+    transition: 0.2s;
+}
+
+.nav__link:hover {
+    color: #5D5DFF;
+}
+
+
+/* ---HERO--------------------------- */
+
+.hero {
+    height: calc(100vh - 80px);
+    background: url("../img/content/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__hero {
+    margin-bottom: 54px;
+}
+
+.hero-card {
+    max-width: 675px;
+    padding: 48px 50px;
+    background: #151719;
+    border: 1px solid #9B9B9B;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #D9E3EA;
+}
+
+.hero-card__title {
+    margin-bottom: 11px;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #9BA9B4;
+}
+
+.hero-card__text {
+    margin-bottom: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 30px;
+    background: #5D5DFF;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* ---ABOUT--------------------------- */
+
+.main__about {
+    margin-bottom: 37px;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    margin-bottom: 32px;
+}
+
+.about__image {
+    max-width: 738px;
+    margin-bottom: 32px;
+    border: 2px solid #9B9B9B;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about__image img {
+    width: 100%;
+}
+
+.about__text {
+    max-width: 782px;
+}
+
+/* ---BENEFITS--------------------------- */
+.main__benefits {
+    margin-bottom: 52px;
+}
+
+.benefits__title {
+    margin-bottom: 43px;
+    text-align: center;
+}
+
+.benefits__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.benefit-card {
+    width: 300px;
+    height: 400px;
+    padding: 40px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #151719;
+    border: 1px solid #9B9B9B;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.benefit__icon {
+    margin-bottom: 16px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 9px 30px;
+    font-weight: 700;
+    font-size: 17px;
+    background: #5D5DFF;
+    border-radius: 25px;
+}
+
+.benefit-card__badge {
+    margin-bottom: 32px;
+}
+
+/* ---COLLEGE--------------------------- */
+.main__college {
+    margin-bottom: 52px;
+}
+
+.college__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.college__title {
+    margin-bottom: 37px;
+}
+
+.college__image {
+    max-width: 100%;
+    margin-bottom: 52px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.college__image img {
+    width: 100%;
+}
+
+.college__text {
+    max-width: 807px;
+}
+
+/* ---FACTS--------------------------- */
+.main__facts {
+    margin-bottom: 63px;
+}
+
+.facts__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facts__title {
+    margin-bottom: 26px;
+}
+
+.badge_pink {
+    background: #FF5085;
+}
+
+.facts__badge {
+    margin-bottom: 55px;
+}
+
+.swiper {
+    width: 1032px;
+    height: 446px;
+}
+
+.fact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    padding: 37px 18px;
+    background: #151719;
+    border: 1px solid #9B9B9B;
+    border-radius: 10px;
+}
+
+.fact-card__icon {
+    margin-bottom: 63px;
+}
+
+:root {
+    --swiper-pagination-color: #5D5DFF;
+    --swiper-pagination-bullet-size: 15px;
+    --swiper-pagination-bullet-inactive-color: #D9D9D9;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+/* ---CONTACTS--------------------------- */
+.main__contacts {
+    margin-bottom: 104px;
+}
+
+.contacts__title {
+    text-align: center;
+}
+
+.contacts__wrapper {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts__data {
+    width: 425px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #25282C;
+    border: 3px solid #5D5DFF;
+    border-radius: 10px;
+}
+
+.contacts__title {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #D9E3EA;
+}
+
+.badge_green {
+    background: #36A269;
+}
+
+.contacts__badge {
+    margin-bottom: 24px;
+}
+
+.socials__list {
+    display: flex;
+    column-gap: 15px;
+}
+
+.socials__link img {
+    transition: 0.2s;
+}
+
+.socials__link img:hover {
+    transform: scale(1.2);
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.map__badge {
+    margin-bottom: 21px;
+}
+
+.map__container {
+    width: 705px;
+    height: 344px;
+    border: 4px solid #5D5DFF;
+    border-radius: 10px;
+}
+
+/* ---FOOTER--------------------------- */
+.footer {
+    height: 147px;
+    background: #25282C;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.footer__text {
+    margin: 28px 0 16px 0;
+}
+
+.techs__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.badge_orange {
+    background: #E44D26;
+}
+
+.badge_yellow {
+    background: #F7DF1E;
+    color: #000000;
+}
+
+.badge_grey {
+    background: #5E5E5E;
+}
